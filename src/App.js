@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Component1 from './Component1';
+import Hello from './component/Hello.js';
 
 function App() {
   return (
@@ -8,8 +9,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          20241028 react
         </p>
+        <Hello />
         <Component1 />
         <a
           className="App-link"
