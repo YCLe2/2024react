@@ -5,11 +5,15 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear; /* 애니메이션 추가 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -26,13 +30,12 @@
 
 .App-link {
   color: #61dafb;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.components-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px auto;
 }
